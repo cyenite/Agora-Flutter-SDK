@@ -61,7 +61,7 @@ dependencies {
     }
 
     implementation 'io.agora.rtc:full-rtc-basic:4.2.6'
-    implementation 'io.agora.rtc:full-jnd:3.7.0.3'
+    // implementation 'io.agora.rtc:full-jnd:3.7.0.3'
     implementation 'io.agora.rtc:full-full-audio-format:3.6.2'
 }
 
