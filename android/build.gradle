@@ -54,13 +54,15 @@ android {
 }
 
 dependencies {
-  if (isDev(project)) {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
-  } else {
-    api 'io.agora.rtc:iris-rtc:4.2.6-build.3'
-    api 'io.agora.rtc:full-sdk:4.2.6'
-    api 'io.agora.rtc:full-screen-sharing:4.2.6'
-  }
+    if (isDev(project)) {
+        implementation fileTree(dir: "libs", include: ["*.jar"])
+    } else {
+        api 'io.agora.rtc:iris-rtc:4.2.6-build.3'
+    }
+
+    implementation 'io.agora.rtc:full-rtc-basic:4.2.6'
+    implementation 'io.agora.rtc:full-jnd:3.7.0.3'
+    implementation 'io.agora.rtc:full-full-audio-format:3.6.2'
 }
 
 static boolean isDev(Project project) {
